@@ -1,0 +1,91 @@
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .carousel-slide {
+            transition: transform 0.5s ease-in-out;
+        }
+        
+        .game-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        
+        .class-card:hover {
+            transform: scale(1.05);
+            transition: all 0.3s ease;
+        }
+        
+        .progress-bar {
+            background: linear-gradient(90deg, #10b981, #3b82f6);
+        }
+        
+        .star-animation {
+            animation: starPulse 2s infinite;
+        }
+        
+        @keyframes starPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        
+        .streak-fire {
+            animation: fireFlicker 1.5s infinite alternate;
+        }
+        
+        @keyframes fireFlicker {
+            0% { transform: scale(1) rotate(-2deg); }
+            100% { transform: scale(1.1) rotate(2deg); }
+        }
+
+        .notification {
+            animation: slideInRight 0.5s ease-out;
+        }
+
+        @keyframes slideInRight {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        #emojiGameSection {
+  margin-top: 50px;
+  padding: 20px;
+  background: #f9fbe7;
+  border-top: 2px solid #ff9800;
+  text-align: center;
+}
+
+#gameArea {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+  border: 2px solid #ff9800;
+  background: #fff8e1;
+  overflow: hidden;
+}
+
+#basket {
+  position: absolute;
+  bottom: 10px;
+  left: 130px;
+  width: 50px;
+  height: 50px;
+  background: #ff9800;
+  border-radius: 10px;
+}
+
+.emoji {
+  position: absolute;
+  font-size: 28px;
+}
